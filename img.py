@@ -4,6 +4,8 @@ from tkinter import filedialog
 from PIL import Image, ImageTk
 import os
 import threading
+import webbrowser
+
 
 app = TkinterDnD.Tk()
 app.geometry("600x750")
@@ -99,6 +101,10 @@ def toggle_fullscreen():
 def minimize():
     app.iconify()
 
+def open_github():
+    webbrowser.open("https://github.com/naveed-gung/")
+
+
 control_frame = ctk.CTkFrame(app, fg_color="transparent")
 control_frame.pack(fill="x", padx=10, pady=5)
 
@@ -146,5 +152,9 @@ status_label.pack(pady=10)
 
 app.drop_target_register(DND_FILES)
 app.dnd_bind("<<Drop>>", drop_file)
+
+github_label = ctk.CTkLabel(app, text="🔗 Visit My GitHub", font=("Arial", 12, "underline"), cursor="hand2", text_color="#1e90ff")
+github_label.pack(pady=10)
+github_label.bind("<Button-1>", lambda e: open_github())
 
 app.mainloop()
