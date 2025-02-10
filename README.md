@@ -22,7 +22,7 @@ Ensure you have **Python 3.10+** installed.
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/image-converter-resizer.git
+git clone https://github.com/naveed-gung/image-converter-resizer.git
 cd image-converter-resizer
 ```
 
@@ -53,9 +53,7 @@ pip install customtkinter tkinterdnd2 pillow
 4. Provide an **Output File Name**.
 5. Click **Convert & Resize** and watch the progress bar!
 
-## 📜 License
-This project is licensed under the **MIT License**.
 
 ---
-👨‍💻 Made by Naveed (https://github.com/yourusername)
+👨‍💻 Made by Naveed 
 
